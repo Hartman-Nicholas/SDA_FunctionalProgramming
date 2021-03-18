@@ -1,4 +1,4 @@
-const fs = require('fs');
+// const fs = require('fs');
 
 /* eslint-disable no-console */
 
@@ -32,13 +32,13 @@ running in the Terminal (returns true) then it allows the user to select the dat
 providing an argument. If its running in the browser (returns false) then it loads the
 data directly from the file. */
 
-if (typeof window === 'undefined') {
-  const rawData = fs.readFileSync(process.argv[2]);
-  DATA = JSON.parse(rawData.toString());
-} else {
-  // eslint-disable-next-line global-require
-  DATA = require('./MOCK_DATA.json');
-}
+// if (typeof window === 'undefined') {
+//   const rawData = fs.readFileSync(process.argv[2]);
+//   DATA = JSON.parse(rawData.toString());
+// } else {
+// eslint-disable-next-line global-require
+DATA = require('./MOCK_DATA.json');
+// }
 
 /* **************************** Exercise 1: Number of females *********************************** */
 
