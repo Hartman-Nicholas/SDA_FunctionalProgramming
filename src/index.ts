@@ -37,7 +37,7 @@ data directly from the file. */
 //   DATA = JSON.parse(rawData.toString());
 // } else {
 // eslint-disable-next-line global-require
-const DATA: personObject = require('./MOCK_DATA.json');
+const DATA: personObject[] = require('./MOCK_DATA.json');
 // }
 
 /* **************************** Exercise 1: Number of females *********************************** */
