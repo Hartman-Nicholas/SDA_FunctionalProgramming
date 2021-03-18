@@ -15,17 +15,17 @@ interface personObject {
   age: number;
 }
 
-let DATA: personObject[] = [
-  {
-    id: 0,
-    first_name: '',
-    last_name: '',
-    email: '',
-    gender: '',
-    ip_address: '',
-    age: 0,
-  },
-];
+// let DATA: personObject[] = [
+//   {
+//     id: 0,
+//     first_name: '',
+//     last_name: '',
+//     email: '',
+//     gender: '',
+//     ip_address: '',
+//     age: 0,
+//   },
+// ];
 
 /* Type of window checks if the program is running in the browser or in the Terminal if its running
 running in the Terminal (returns true) then it allows the user to select the data to load by
@@ -37,7 +37,7 @@ data directly from the file. */
 //   DATA = JSON.parse(rawData.toString());
 // } else {
 // eslint-disable-next-line global-require
-DATA = require('./MOCK_DATA.json');
+const DATA: personObject = require('./MOCK_DATA.json');
 // }
 
 /* **************************** Exercise 1: Number of females *********************************** */
